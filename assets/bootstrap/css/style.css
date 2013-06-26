@@ -1,0 +1,60 @@
+body { 
+  background: url(images-1.jpeg) no-repeat center center fixed; 
+  webkit-background-size: cover;
+  moz-background-size: cover;
+  o-background-size: cover;
+  background-size: cover;
+}
+
+h1{
+	color: red;
+	margin-left: 100px;
+}
+
+/*Login*/
+#login{
+	border: 1px solid red;
+	margin-left: 20px;
+}
+
+.baby1{
+
+}
+
+/*myCarousel*/
+#myCarousel{
+	width: 670px;
+	height: 840px;
+	padding: 60px;
+	padding-bottom: 65px;
+	margin-left: 470px;
+	margin-top: 50px;
+	margin-bottom: 120px;
+	border: 10px solid white;
+	background-color: green;
+
+}
+
+.carousel-inner img{
+	height: 900px;
+	width: 200px;
+}
+
+.carousel-caption{
+	height: 200px;
+}
+
+.item img{
+	width: 800px;
+	height: 580px;
+	
+}
+
+
+.text-success{
+	color: darkgray;
+}
+
+/*<!-- FOOTER -->*/
+.footer{
+}

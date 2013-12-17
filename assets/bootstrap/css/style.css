@@ -1,20 +1,43 @@
+/*Welcome Page!*/
 body { 
-  background: url(images-1.jpeg) no-repeat center center fixed; 
+  /*background:#444 url(bg.png) no-repeat center center fixed; */
   webkit-background-size: cover;
   moz-background-size: cover;
   o-background-size: cover;
   background-size: cover;
+  background-color: #1F83B7;
+  margin:25px;
+  /*background: url(low-cloud-cumulus.jpg);*/
+}
+.logo_color{
+	color:red;
+}
+.clear{
+	clear:both;
 }
 
 h1{
-	color: red;
+	color: #999;
 	margin-left: 100px;
 }
 
+.title{
+	color:#E3E2DB;
+}
 /*Login*/
 #login{
-	border: 1px solid red;
-	margin-left: 20px;
+	/*border: 1px solid red;*/
+	/*margin-left: 20px;*/
+	/*background-color: #484069;*/
+	background-color: #ddd;
+}
+
+#label{
+	float: right;
+}
+
+#password{
+	float: right;
 }
 
 .baby1{
@@ -23,38 +46,126 @@ h1{
 
 /*myCarousel*/
 #myCarousel{
-	width: 670px;
-	height: 840px;
-	padding: 60px;
+	width: 540px;
+	height: 470px;
+	padding: 20px;
 	padding-bottom: 65px;
-	margin-left: 470px;
-	margin-top: 50px;
-	margin-bottom: 120px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 95px;
 	border: 10px solid white;
 	background-color: green;
-
 }
 
+/*carousel fram*/
 .carousel-inner img{
-	height: 900px;
+	height: 620px;
 	width: 200px;
+	/*border: 2px solid blue;*/
 }
 
 .carousel-caption{
-	height: 200px;
+	height: 115px;
 }
 
+/*Picture size for carousel!*/
 .item img{
-	width: 800px;
-	height: 580px;
-	
+	width: 700px;
+	height: 500px;
+		
 }
-
+/*end of picture sizing for carousel!*/
 
 .text-success{
+	color: darkgray;
+}
+.welcome_message{
 	color: darkgray;
 }
 
 /*<!-- FOOTER -->*/
 .footer{
+	/*background-color: #aaa;*/
+	background:#444 url(tweed.png);
+	margin-bottom: 25px;
+	height: 24px;
 }
+
+/*End of Welcome Page.*/
+/*=======================================*/
+/*Register Page*/
+#register{
+	float: left;
+}
+.main_container{
+	/*border: 2px solid red;*/
+	margin-top: 25px;
+}
+
+.container-fluid{
+	margin: auto;
+}
+
+.picture1{
+	float: right;
+}
+
+
+/*End of Register Page*/
+/*====================================*/
+/*profile.php*/
+#header{
+	height: 70px;
+	background-color: #aaa;
+	background:#444 url(tweed.png);
+}
+#link_hover{
+	font-size: 20px;
+	font-weight: bold;
+}
+#link_hover:hover{
+	border-bottom: 2px solid #F3FFF6;
+	width: 130px;
+	background-color: inherit;
+}
+
+	/*RssFeed*/
+.main_body{
+	background-color: #81BCD7;
+	border-top: 20px;
+	height: 546px;
+}
+
+.rss_header{
+	/*color: #CCEBFA;*/
+}
+
+.register_welcome{
+	margin-left: 200px;
+	float: left;
+}
+
+/* #E3E2DB it is a good white color*/
+#register_hover{
+	color: #E3E2DB; 
+}
+
+/*rssFeed 3 boxed in the profile page.*/
+.rssFeed{
+	background-color: #FAF8F1;
+	border: 2px solid white;
+	float: left;
+	margin: 10px;
+
+}
+
+.logoff{
+	float: right;
+	background-color: #FF7C0A;
+}
+
+.rss{
+	float: right;
+}
+
+

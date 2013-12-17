@@ -31,6 +31,8 @@
 <body>
 	<h1>MBC</h1>
 	<h2>myBAby.com</h2>
+  <hr class="clearfix header">
+  <!-- the <hr class="clearfix header" puts a line accross, just the way it is. -->
 	<!--Log In -->
   <?php
       if(isset($login_errors))
@@ -40,16 +42,19 @@
       }
  ?>
 	<div id="login">
-	<form id='login' action="<?= base_url();?>main/process_login" method="post">
-		<label>Email:</label>
-		<input type="text" name="email" ></input></br>
-		<label>Password:</label>
-		<input type="password" name="password" ></input></br>
-		<input class="btn btn-primary" type="submit" value="Login" ></input></br>
-	</form>
-	<!--End of Form-->
+  	<form id='login' action="<?= base_url();?>main/process_login" method="post">
+  		<div id="label"><label>Email:</label>
+  		<input type="text" name="email" ></input>
+    </div>
+  		<div id="password"><label>Password:</label>
+  		<input type="password" name="password" ></input>
+  		<input class="btn btn-primary" type="submit" value="Login" ></input>
+    </div>
+  	</form>
+    <div class='clear'></div>
 	</div>
-	<h1>learn millon of things about your baby</h1>
+  <!--End of Form-->
+	<h1>learn millon of things about your baby by "healthbooking" </h1>
  <!-- Carousel
     ================================================== -->
 <div id="myCarousel" class="carousel slide">
@@ -64,28 +69,38 @@
           <img src="<?= base_url();?>assets/img_proj1/examples/DSC_0001.jpg" alt="">
           <!-- <div class="container"> -->
         <div class="carousel-caption">
-          <h1>Nutrician.</h1>
-          <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <h3 class="title">Nutrition.</h3>
+          <p class="lead">The importance of knowing what foods to introduce and at what age.</p>
           <a class="btn btn-large btn-primary" href="<?= base_url(); ?>main/register">Sign up today</a>
         </div>
           <!-- </div> -->
         </div><!-- Carousel items -->
         <div class="item">
-          <img src="<?= base_url();?>assets/img_proj1/examples/DSC_0002.jpg" alt="">
+          <img src="<?= base_url();?>assets/img_proj1/examples/Aiden8mo2.jpg" alt="">
        <!--    <div class="container"> -->
             <div class="carousel-caption">
-              <h1>Shared samples from actual parents.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h3 class="title">Updates from parents.</h3>
+              <p class="lead">Parents have the opportunity to share experiences with other members.</p>
               <a class="btn btn-large btn-primary" href="#">Learn more</a>
             </div>
          <!--  </div> -->
         </div>
         <div class="item">
-          <img src="<?= base_url();?>assets/img_proj1/examples/DSC_0003.jpg" alt="">
+          <img src="<?= base_url();?>assets/img_proj1/examples/Aiden8mo1.jpg" alt="">
          <!--  <div class="container"> -->
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h3 class="title">RSS feeds from hospitals.</h3>
+              <p class="lead">Helpful research from leading hospitals.</p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+            </div>
+          <!-- </div> -->
+        </div>
+          <div class="item">
+          <img src="<?= base_url();?>assets/img_proj1/examples/Aiden6mo.jpg" alt="">
+         <!--  <div class="container"> -->
+            <div class="carousel-caption">
+              <h3 class="title">RSS feeds from hospitals.</h3>
+              <p class="lead">Helpful research from leading hospitals.</p>
               <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
             </div>
           <!-- </div> -->
@@ -96,6 +111,7 @@
       <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
   </div><!-- /.carousel -->
     <!-- FOOTER -->
+  <hr class="clearfix header">
     <div class="footer">
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>

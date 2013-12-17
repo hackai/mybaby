@@ -32,22 +32,11 @@ class Main extends CI_Controller {
 		{
 			$this->load->model('User_model');
 			$user = $this->User_model->get_user(['email' => $this->input->post('email'), 'password' => $this->input->post('password')]);
-			// $user = array('id' => 1,
-			// 			  'email' => $_POST['email'],
-			// 			  'loging_status'=> TRUE);
-			// die(var_dump($user));
-
-			//Test to see if $user has been created
-			// var_dump($user);
-			// die();
-			if(count($user)>0)
+			if($user !== 'error')
+			// if user doesn't == show error. 
 			{
 				$this->session->set_userdata('user_session', $user);
 				redirect(base_url('/main/profile'));
-				// $viewdata['user'] = $this->session->userdata('user_session');
-				// $viewdata['message'] = 'we have made it to the profile page passing the variable $message';
-
-				// $this->load->view('profile', $viewdata);
 			}
 			else
 			{
@@ -87,13 +76,13 @@ class Main extends CI_Controller {
 		}	
 		else
 		{
-			// $this->load->library('encrypt');
+			$this->load->library('encrypt');
 			$this->load->model('User_model');
 			$user = array('first_name'=> $_POST['first_name'],
 						  'last_name'=> $_POST['last_name'],
 						  'email' => $_POST['email'],
-						  'password'=> $_POST['password']);
-			//$this->encrypt->encode($this->input->post('password'))
+						  'password'=>$this->encrypt->encode($this->input->post('password')));
+			// once password is encoded, we need to decode it, so new user can login!
 			$this->User_model->register_user($user);
 			$view_data['user_info'] = $this->User_model->get_user($user);
 			$this->session->set_userdata('user_session', $view_data['user_info']);

@@ -5,6 +5,7 @@
 <html lang="en-US">
 <head>
 	<meta charset= "UTF-8">
+	<title>Boris Parov mybaby php project</title>
 	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/bootstrap/css/style.css">
 	<link href="../assets/css/example_ticker.css" rel="stylesheet" type="text/css" />
